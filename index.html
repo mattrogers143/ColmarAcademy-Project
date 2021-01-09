@@ -9,17 +9,23 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav-desktop">
         <div id="logo">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy lion logo">
           <h1><strong>Colmar</strong>Academy</h1>
         </div>
         <ul>
-          <li><a href="#">On campus</a></li>
-          <li><a href="#">Online</a></li>
+          <li><a href="#events">On campus</a></li>
+          <li><a href="#start-learning">Online</a></li>
           <li><a href="#">For companies</a></li>
           <li><a href="#">Sign in</a></li>
         </ul>
+      </nav>
+      <nav id="nav-mobile">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy lion logo" class="icon">
+        <img src="./resources/images/ic-on-campus.svg" alt="desk icon" class="icon">
+        <img src="./resources/images/ic-online.svg" alt="computer icon" class="icon">
+        <img src="./resources/images/ic-login.svg" alt="human icon" class="icon">
       </nav>
       <div id="hero" class="section">
         <div id="banner-container">
@@ -126,10 +132,47 @@
           </div>
         </div>
       </div>
-
+      <div id="thesis-exhibit" class="section">
+        <div class="left-side-feature">
+          <video class="left-side-media" src="./resources/videos/thesis.mp4" controls>
+            Video unsupported.
+          </video>
+          <h2>Reimagine projects</h2>
+          <aside class="quote">A day in the life of one student's Architecture Through Animation thesis project. The class is offered three times every summer.</aside>
+        </div>
+        <div class="event-cards thesis-card">
+          <div class="card list-top">
+            <div class="square-container">
+              <img class="square-pic" src="./resources/images/thesis-fisma.jpg" alt="phone and mobile app diagrams">
+            </div>
+            <div class="event-notes thesis-notes">
+              <h4>Fisma: Design and Prototype</h4>
+              <p>Designer showcase of new prototype products.</p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="square-container">
+              <img class="square-pic" src="./resources/images/information-campus.jpg" alt="interior of a cafe">
+            </div>
+            <div class="event-notes thesis-notes">
+              <h4>Now and Then</h4>
+              <p>Research study about New York.</p>
+              <p><a href="#">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-
+      <div id="copyright">
+        <p>&copy;2016 Colmar Academy. All rights reserved.</p>
+      </div>
+      <ul id="footer-ul">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+      </div>
     </footer>
   </body>
 </html>
