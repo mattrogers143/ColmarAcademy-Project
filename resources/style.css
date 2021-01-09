@@ -33,7 +33,7 @@ a:active {
   border-top: hsla(183, 91%, 37%, 0.1) 1px solid;
   display: flex;
   position: relative;
-  top: 64px;
+  top: 32px;
 }
 
 /* NAVIGATION ====================*/
@@ -208,6 +208,9 @@ h2,
   height: auto;
   width: 100%;
 }
+.rectangle-container {
+  display: none;
+}
 .event-notes {
   height: auto;
   width: 65%;
@@ -311,12 +314,15 @@ footer {
   #logo h1,
   ul,
   #events .left-side-feature,
+  .square-container,
   .course-card img,
   .course-card p,
   .left-side-feature aside,
   .thesis-card {
-    visibility: hidden;
+    display: none;
   }
+
+  /* NAVIGATION ===============*/
   #nav-mobile {
     align-items: center;
     background-color: white;
@@ -333,6 +339,8 @@ footer {
   .icon {
     visibility: visible;
   }
+
+  /* HERO ===============*/
   .section {
     display: block;
     top: 48px;
@@ -353,7 +361,83 @@ footer {
   }
   button {
     margin: 0 auto 2rem 1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     width: 60%;
+  }
+
+  /* EVENTS ===============*/
+  #events {
+    background-color: hsl(183, 57%, 12%);
+    display: block;
+  }
+  .event-cards {
+    width: 100%;
+  }
+  .rectangle-container {
+    display: block;
+  }
+  .rectangle-pic {
+    width: 100%;
+  }
+  .card {
+    border-bottom: none;
+    display: block;
+  }
+  .list-top {
+    margin: 0;
+  }
+  .event-notes {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .event-notes h4,
+  .event-notes p {
+    margin: 1rem;
+  }
+
+  /* START LEARNING ===============*/
+  #start-learning {
+    padding: 2rem 0 1rem auto;
+    margin-bottom: 1rem;
+  }
+  #start-learning h2 {
+    margin: 2rem 0 1rem auto;
+    text-align: center;
+  }
+  #grid-container {
+    display: block;
+    margin: 64px 0 32px 0;
+  }
+  .course-card {
+    background-color: hsl(183, 23%, 80%);
+    padding: 16px;
+    margin: 8px 16px;
+  }
+  .course-description,
+  .course-description h4 {
+    margin: 0;
+  }
+
+  /* THESIS EXHIBIT ===============*/
+  #thesis-exhibit {
+    background-color: hsl(39, 100%, 60%);
+  }
+  #thesis-exhibit .left-side-feature {
+    margin: 0;
+    width: 100%;
+  }
+  .left-side-media {
+    margin-bottom: 1rem;
+  }
+  .left-side-feature h2 {
+    margin: 0;
+    padding: 0 1rem 1.5rem 1rem;
+    text-align: center;
+  }
+
+  /* FOOTER ===============*/
+  #copyright {
+    margin: 1rem 1.5rem;
+    width: 100%;
   }
 }
